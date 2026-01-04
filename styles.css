@@ -130,3 +130,39 @@ body{
 .bullets b{font-weight:800;}
 /* plan table tweaks */
 .plan-table td, .plan-table th{vertical-align:top;}
+
+/* =========================
+   강의계획표 테이블 스타일
+   ========================= */
+
+.plan-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 15px;
+  border: 2px solid #555;   /* 테이블 외곽선 */
+}
+
+.plan-table th,
+.plan-table td {
+  border: 1.5px solid #777; /* 셀 구분선 */
+  padding: 10px 12px;
+  vertical-align: top;
+}
+
+.plan-table th {
+  background-color: #f2f4f6; /* 헤더 연한 회색 */
+  font-weight: 700;
+  text-align: center;
+}
+
+.plan-table td {
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+/* 행 구분 가독성 */
+.plan-table tr:nth-child(even) td {
+  background-color: #fafafa;
+}
+
